@@ -7,7 +7,8 @@ namespace Zadanie2
         static void Main(string[] args)
         {
             Say.Hello();
-            Say.World();
+            Say test = new Say();
+            test.World();
             Bravo();
         }
         private static void Bravo()
