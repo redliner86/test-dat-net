@@ -25,6 +25,28 @@ namespace Zadanie4
 
         private static void Calculate(double a, double b, double c)
         {
+            double delta = Math.Pow(b, 2) - 4 * a * c;
+            double x1, x2;
+
+            if (delta == 0)
+            {
+                x1 = (-b / (2 * a));
+                Console.WriteLine("x = " + x1);
+            }
+            else
+            {
+                if (delta > 0)
+                {
+                    x1 = ((-b + Math.Sqrt(delta)) / (2 * a));
+                    x2 = ((-b - Math.Sqrt(delta)) / (2 * a));
+                    Console.WriteLine("x1 = " + x1 + "; x2 = " + x2);
+                }
+                else
+                {
+                    Console.WriteLine("Brak miejsc zerowych");
+                }
+            }                
+
             // napisz w tym miejscu obliczanie rozwiązań (miejsc zerowych)
             // funkcji kwadratowej i wypisanie ich na ekran
             //
