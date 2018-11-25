@@ -10,7 +10,7 @@ namespace DrugaAplikacjaKonsolowa
     {
         static void Main(string[] args)
         {
-            Console.Write("Nacisnij dowolny klawisz");
+            Console.WriteLine("Nacisnij dowolny klawisz");
             Console.ReadKey();
         }
     }
